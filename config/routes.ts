@@ -43,6 +43,26 @@
 		component: './TodoList',
 	},
 
+	{ 
+		path: '/th01',
+		name: 'TH01',
+		icon: 'ExperimentOutlined',
+		routes: [
+			{
+				path: 'guess-number',
+				name: 'Đoán Số',
+				component: './TH01/GuessThenum',
+			},
+			{
+				path: 'theo-doi-hoc-tap',
+				name: 'Theo Dõi Học Tập',
+				component: './TH01/Theodoihoctap',
+				// hideInMenu: true,
+			}
+		],
+	},
+
+	
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
