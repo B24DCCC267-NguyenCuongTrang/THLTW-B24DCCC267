@@ -1,4 +1,6 @@
-﻿export default [
+﻿import path from "path";
+
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -61,6 +63,29 @@
 			}
 		],
 	},
+
+	{
+		path: '/th02',
+		name: 'TH02',
+		icon: 'ExperimentOutlined',
+		routes: [
+			{
+				path: 'oan-tu-ti',
+				name: 'Oẳn Tù Tì',
+				component: './TH02/Oantuti',
+			},
+
+			{
+				path: 'quan-li-ngan-hang',
+				name: 'Quản Lí Ngân Hàng',
+				component: './TH02/Quanlinganhang',
+				// hideInMenu: true,
+			}
+
+		],
+	},
+
+
 
 	
 	// DANH MUC HE THONG

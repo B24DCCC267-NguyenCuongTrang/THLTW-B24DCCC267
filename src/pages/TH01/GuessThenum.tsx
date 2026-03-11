@@ -8,7 +8,7 @@ const GuessThenum = () => {
   const [message, setMessage] = useState<string>('');
   const [gameOver, setGameOver] = useState<boolean>(false);
 
-  // Khởi tạo game
+ 
   const initGame = () => {
     const randomNum = Math.floor(Math.random() * 100) + 1;
     setTargetNumber(randomNum);
@@ -18,16 +18,16 @@ const GuessThenum = () => {
     setGuess('');
   };
 
-  // Chạy khi component mount
+  
   useEffect(() => {
     initGame();
   }, []);
 
-  // Xử lý đoán số
+  
   const handleGuess = () => {
     const guessNum = parseInt(guess);
     
-    // Validate input
+    
     if (isNaN(guessNum) || guessNum < 1 || guessNum > 100) {
       antdMessage.error('Vui lòng nhập số từ 1 đến 100!');
       return;
@@ -36,7 +36,7 @@ const GuessThenum = () => {
     const newAttempts = attempts + 1;
     setAttempts(newAttempts);
 
-    // Kiểm tra đoán
+   
     if (guessNum === targetNumber) {
       setMessage(`Chúc mừng! Bạn đã đoán đúng!`);
       setGameOver(true);

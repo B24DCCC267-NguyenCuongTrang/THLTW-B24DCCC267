@@ -9,7 +9,7 @@ const Theodoihoctap = () => {
   const [form] = Form.useForm();
   const [editing, setEditing] = useState<any>(null);
 
-  // Load từ localStorage
+  
   useEffect(() => {
     const s = localStorage.getItem('subjects');
     const sess = localStorage.getItem('sessions');
@@ -19,14 +19,14 @@ const Theodoihoctap = () => {
     if (g) setGoal(Number(g));
   }, []);
 
-  // Lưu localStorage
+  
   useEffect(() => {
     localStorage.setItem('subjects', JSON.stringify(subjects));
     localStorage.setItem('sessions', JSON.stringify(sessions));
     localStorage.setItem('goal', String(goal));
   }, [subjects, sessions, goal]);
 
-  // Thêm môn
+  
   const addSubject = () => {
     if (newSubject.trim()) {
       setSubjects([...subjects, newSubject]);
@@ -34,12 +34,12 @@ const Theodoihoctap = () => {
     }
   };
 
-  // Xóa môn
+  
   const deleteSubject = (s: string) => {
     setSubjects(subjects.filter(x => x !== s));
   };
 
-  // Submit form
+  
   const onFinish = (values: any) => {
     if (editing) {
       setSessions(sessions.map(s => s.id === editing.id ? { ...values, id: editing.id } : s));
@@ -52,18 +52,18 @@ const Theodoihoctap = () => {
     setEditing(null);
   };
 
-  // Sửa
+  
   const edit = (record: any) => {
     setEditing(record);
     form.setFieldsValue(record);
   };
 
-  // Xóa
+  
   const del = (id: number) => {
     setSessions(sessions.filter(s => s.id !== id));
   };
 
-  // Tính tổng giờ
+ 
   const total = sessions.reduce((sum, s) => sum + (s.duration || 0), 0);
 
   const columns = [
