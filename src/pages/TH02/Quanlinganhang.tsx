@@ -20,15 +20,15 @@ const Quanlinganhang: React.FC = () => {
   const [exams, setExams] = useState<Exam[]>([]);
   const [msg, setMsg] = useState('');
 
-  // Form danh mục
+ 
   const [topicName, setTopicName] = useState('');
   const [sForm, setSForm] = useState({ code: '', name: '', credits: 3 });
 
-  // Form câu hỏi + filter
+ 
   const [qForm, setQForm] = useState({ subjectId: '', topicId: '', content: '', difficulty: 'Dễ' as Difficulty });
   const [filter, setFilter] = useState({ subjectId: '', topicId: '', difficulty: '' as Difficulty | '' });
 
-  // Form cấu trúc + tạo đề
+  
   const [draft, setDraft] = useState<{ name: string; subjectId: string; lines: Line[] }>({
     name: '',
     subjectId: '',

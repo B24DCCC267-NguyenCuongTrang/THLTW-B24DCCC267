@@ -59,7 +59,7 @@ export default [
 				path: 'theo-doi-hoc-tap',
 				name: 'Theo Dõi Học Tập',
 				component: './TH01/Theodoihoctap',
-				// hideInMenu: true,
+				
 			}
 		],
 	},
@@ -79,10 +79,23 @@ export default [
 				path: 'quan-li-ngan-hang',
 				name: 'Quản Lí Ngân Hàng',
 				component: './TH02/Quanlinganhang',
-				// hideInMenu: true,
+				
 			}
 
 		],
+	},
+
+	{
+		path: '/th03',
+		name: 'TH03',
+		icon: 'ExperimentOutlined',
+		routes: [
+			{
+				path: 'quan-li-dat-lich',
+				name: 'Quản Lý Đặt Lịch',
+				component: './TH03',
+			}
+		]
 	},
 
 
