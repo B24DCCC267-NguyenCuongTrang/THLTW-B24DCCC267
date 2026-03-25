@@ -1,6 +1,4 @@
-﻿import path from "path";
-
-export default [
+﻿export default [
 	{
 		path: '/user',
 		layout: false,
@@ -97,7 +95,20 @@ export default [
 			}
 		]
 	},
+	{
+		path: '/th04',
+		name: 'TH04',
+		icon: 'ExperimentOutlined',
+		routes: [
+			{
+				path: 'quan-li-van-bang',
+				name: 'Quản Lý Văn Bằng',
+				component: './TH04',
+			},
+		],
+	},
 
+	
 
 
 	
