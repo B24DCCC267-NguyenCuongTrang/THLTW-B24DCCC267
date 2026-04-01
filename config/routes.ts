@@ -107,6 +107,18 @@
 			},
 		],
 	},
+	{
+		path: '/th05',
+		name: 'TH05',
+		icon: 'ExperimentOutlined',
+		routes: [
+			{
+				path: 'quan-li-clb-va-dang-ky',
+				name: 'Quản Lý CLB & Đăng Ký',
+				component: './TH05',
+			},
+		],
+	},
 
 	
 
