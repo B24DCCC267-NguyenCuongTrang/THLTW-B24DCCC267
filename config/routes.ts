@@ -108,6 +108,23 @@
 		],
 	},
 
+
+
+	{
+		path: '/th06',
+		name: 'TH06',
+		icon: 'ExperimentOutlined',
+		routes: [
+			{
+				path: 'lap-ke-hoach-du-lich',
+				name: 'Lập kế hoạch du lịch',
+				component: './TH06',
+			},
+		],
+	},
+
+	
+
 	
 
 
