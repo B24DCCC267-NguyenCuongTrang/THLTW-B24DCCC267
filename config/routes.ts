@@ -123,6 +123,19 @@
 		],
 	},
 
+	{
+		path: '/ktgk',
+		name: 'KTGK',
+		icon: 'ExperimentOutlined',
+		routes: [
+			{
+				path: 'quan-ly-don-hang',
+				name: 'Quản Lý Đơn Hàng',
+				component: './KTGK',
+			},
+		],
+	},
+
 	
 
 	
