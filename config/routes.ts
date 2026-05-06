@@ -1,4 +1,4 @@
-﻿export default [
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -15,9 +15,6 @@
 			},
 		],
 	},
-
-	///////////////////////////////////
-	// DEFAULT MENU
 	{
 		path: '/dashboard',
 		name: 'Dashboard',
@@ -42,21 +39,88 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
-
-	// DANH MUC HE THONG
-	// {
-	// 	name: 'DanhMuc',
-	// 	path: '/danh-muc',
-	// 	icon: 'copy',
-	// 	routes: [
-	// 		{
-	// 			name: 'ChucVu',
-	// 			path: 'chuc-vu',
-	// 			component: './DanhMuc/ChucVu',
-	// 		},
-	// 	],
-	// },
-
+	{
+		path: '/th01',
+		name: 'TH01',
+		icon: 'ExperimentOutlined',
+		routes: [
+			{
+				path: 'guess-number',
+				name: 'Đoán Số',
+				component: './TH01/GuessThenum',
+			},
+			{
+				path: 'theo-doi-hoc-tap',
+				name: 'Theo Dõi Học Tập',
+				component: './TH01/Theodoihoctap',
+			},
+		],
+	},
+	{
+		path: '/th02',
+		name: 'TH02',
+		icon: 'ExperimentOutlined',
+		routes: [
+			{
+				path: 'oan-tu-ti',
+				name: 'Oẳn Tù Tì',
+				component: './TH02/Oantuti',
+			},
+			{
+				path: 'quan-li-ngan-hang',
+				name: 'Quản Lí Ngân Hàng',
+				component: './TH02/Quanlinganhang',
+			},
+		],
+	},
+	{
+		path: '/th03',
+		name: 'TH03',
+		icon: 'FileTextOutlined',
+		component: './TH03',
+	},
+	{
+		path: '/th04',
+		name: 'TH04',
+		icon: 'FileTextOutlined',
+		component: './TH04',
+	},
+	{
+		path: '/th05',
+		name: 'TH05',
+		icon: 'FileTextOutlined',
+		component: './TH05',
+	},
+	{
+		path: '/th06',
+		name: 'TH06',
+		icon: 'FileTextOutlined',
+		component: './TH06',
+	},
+	{
+		path: '/TH07',
+		name: 'TH07',
+		icon: 'FileTextOutlined',
+		component: './TH07',
+	},
+	{
+		path: '/TH08',
+		name: 'TH08',
+		icon: 'FileTextOutlined',
+		component: './TH08',
+	},
+	{
+		path: '/th09',
+		name: 'TH09',
+		icon: 'FileTextOutlined',
+		routes: [
+			{
+				path: 'quan-ly-cong-viec',
+				name: 'Theo dõi công việc cá nhân',
+				component: './TH09',
+			},
+		],
+	},
 	{
 		path: '/notification',
 		routes: [

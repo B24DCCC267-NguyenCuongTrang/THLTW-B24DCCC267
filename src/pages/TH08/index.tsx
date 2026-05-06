@@ -1,0 +1,1 @@
+export { default } from '../../../baseltw/src/pages/TH08';
